@@ -1,4 +1,4 @@
-QBCore = nil
+local QBCore = exports['qb-core']:GetCoreObject()
 
 inInventory = false
 hotbarOpen = false
@@ -28,16 +28,7 @@ Citizen.CreateThread(function ()
         DisableControlAction(0, 37,true)
     end
 end)
-Citizen.CreateThread(function()
-    while true do
-        
-        Citizen.Wait(10)
-        if QBCore == nil then
-            TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end)
-            Citizen.Wait(200)
-        end
-    end
-end)
+
 
 RegisterNetEvent('inventory:client:CheckOpenState')
 AddEventHandler('inventory:client:CheckOpenState', function(type, id, label)
