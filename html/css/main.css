@@ -15,7 +15,6 @@
 }
 
 body {
-	visibility:hidden ;
 	user-select: none;
 	overflow-y: hidden;
 	overflow-x: hidden
