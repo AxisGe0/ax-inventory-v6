@@ -26,14 +26,15 @@ end
 Config.VendingObjects = {
     "prop_vend_soda_01",
     "prop_vend_soda_02",
-    "prop_vend_water_01"
+    "prop_vend_water_01",
+    "prop_vend_coffe_01",
 }
 
 Config.BinObjects = {
     "prop_bin_05a",
 }
 
-Config.VendingItem = {
+Config.itemDrink = {
     [1] = {
         name = "kurkakola",
         price = 4,
@@ -51,6 +52,29 @@ Config.VendingItem = {
         slot = 2,
     },
 }
+
+Config.itemSnack = {
+    [1] = {
+        name = "tosti",
+        price = 4,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    }, -- add the rest of your food here
+}
+
+Config.itemCoffee = {
+    [1] = {
+        name = "coffee",
+        price = 7,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    },
+}
+
 
 Config.CraftingItems = {
     [1] = {
@@ -222,6 +246,21 @@ Config.CraftingItems = {
         points = 12,
     },
 }
+
+-- [#] = { -- Make sure this number isnt the same as other item.
+--     name = "smg_extendedclip", -- Attachment Name | If you cant figure that out then IDK what to tell you. 
+--     amount = 50, -- How many you get.
+--     info = {},  
+--     costs = {
+--         ["metalscrap"] = 255,
+--         ["steel"] = 390,
+--         ["rubber"] = 145,
+--     },
+--     type = "item",
+--     slot = 4,
+--     threshold = 100,
+--     points = 4,
+-- },
 
 Config.AttachmentCrafting = {
     ["location"] = {x = 88.91, y = 3743.88, z = 40.77, h = 66.5, r = 1.0}, 

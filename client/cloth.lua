@@ -4,6 +4,7 @@ function OpenPedClothMenu()
     SendNUIMessage({action = "cloth"})
     CreatePedScreen(true)
 end
+
 function CreatePedScreen(first)
     CreateThread(function()
         local heading = GetEntityHeading(PlayerPedId())
@@ -30,10 +31,12 @@ function CreatePedScreen(first)
         end
     end)
 end
+
 function DeletePedScreen()
     DeleteEntity(PlayerPedPreview)
     SetFrontendActive(false)
 end
+
 function RefreshPedScreen()
     if DoesEntityExist(PlayerPedPreview) then
         DeletePedScreen()
