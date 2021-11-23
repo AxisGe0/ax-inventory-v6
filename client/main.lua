@@ -1,4 +1,4 @@
-QBCore = exports['qb-core']:GetSharedObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 
 local inInventory = false
 local hotbarOpen = false

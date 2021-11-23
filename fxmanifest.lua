@@ -4,10 +4,9 @@ game 'gta5'
 author 'Axis'
 description 'QB-Core'
 version '6.0.0'
-description 'echo-inventory'
+description 'ax-inventory: TheLostEcho'
 
 shared_scripts {
-	'@qb-core/import.lua',
 	'@qb-weapons/config.lua',
 	'config.lua',
 }
@@ -15,12 +14,10 @@ shared_scripts {
 client_scripts {
 	"config.lua",
 	"client/*",
-	"@qb-core/import.lua",
 }
 
 server_scripts {
 	"server/main.lua",
-	"@qb-core/import.lua",
 }
 
 ui_page {
